@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.positive-enter {
+  color: green;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.positive-enter.positive-enter-active {
+  color: green;
+  transform: scale(1.4);
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.positive-leave {
+  display: none;
+}
+
+.positive-leave.positive-leave-active {
+
+}
+
+.negative-enter {
+  color: red;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.negative-enter.negative-enter-active {
+  color: red;
+  opacity: 1;
+  transform: scale(1.4);
+  transition: opacity 500ms ease-in;
+}
+
+.negative-leave {
+  display: none;
+}
+
+.negative-leave.negative-leave-active {
+}
+
+.container {
+  opacity: 0.5;
+  background-color: lightgray;
+  border-radius: 50%;
+  margin: 15px;
+  display: flex;
+  padding: 15px;
+  transition: all 0.5s;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
